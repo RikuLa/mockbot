@@ -1,0 +1,32 @@
+{
+  "name": "mockbot",
+  "version": "0.1.0",
+  "description": "Ever feeling too confident? Have some mocking-on-demand!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d build",
+    "serve": "node build/index.js",
+    "eslint": "./node_modules/.bin/eslint src",
+    "test": "./node_modules/.bin/jest --testMatch '<rootDir>/src/**/*.spec.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "node-fetch": "^1.7.3",
+    "qs": "^6.5.1",
+    "telegraf": "^3.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.18.1",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-jest": "^21.12.2",
+    "jest": "^22.4.2",
+    "nodemon": "^1.15.1"
+  }
+}
