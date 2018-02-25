@@ -1,1 +1,1 @@
-web: npm run build && npm run serve
+bot: npm run build && npm run serve
