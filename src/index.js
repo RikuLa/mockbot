@@ -2,7 +2,9 @@ import Telegraf from 'telegraf'
 import dotenv from 'dotenv'
 import memefy from './util/memefy'
 
-dotenv.config()
+if(process.env.NODE_ENV !== 'heroku') {
+  dotenv.config()
+}
 
 const { BOT_ACCESS_TOKEN, imgFlip_username, imgFlip_password } = process.env
 
